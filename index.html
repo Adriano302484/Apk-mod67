@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>FF Mod Menu UI</title>
+</head>
+<body>
+
+    <div id="mod-menu">
+        <div class="menu-header">
+            <span>FF MOD MENU v1.0</span>
+            <button onclick="toggleMenu()">X</button>
+        </div>
+        <div class="menu-body">
+            <div class="option">
+                <label>Aimbot 100%</label>
+                <input type="checkbox" id="aimbot">
+            </div>
+            <div class="option">
+                <label>Esp Name</label>
+                <input type="checkbox" id="esp">
+            </div>
+            <div class="option">
+                <label>Velocidade (2x)</label>
+                <input type="range" min="1" max="5" value="1">
+            </div>
+            <button class="btn-activate" onclick="saveConfig()">ATIVAR MODS</button>
+        </div>
+    </div>
+
+    <button id="floating-icon" onclick="toggleMenu()">FF</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
